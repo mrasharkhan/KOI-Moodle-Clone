@@ -1,0 +1,358 @@
+/* ===================
+   Global Styles
+=================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+main.container {
+  min-height: 80vh;
+}
+
+/* ===================
+   Header & Navigation
+=================== */
+.site-header {
+  background: linear-gradient(90deg, #002244, #004080);
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+nav {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* ===================
+   Footer
+=================== */
+.site-footer {
+  background: linear-gradient(90deg, #002244, #004080);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  border-top: 4px solid #ffcc00;
+  margin-top: 2rem;
+}
+
+.site-footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* ===================
+   Buttons
+=================== */
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: #00529b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003f7f;
+}
+
+/* ===================
+   Login Modal
+=================== */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #888;
+}
+
+/* ===================
+   Admin Dashboard
+=================== */
+.admin-panel {
+  padding: 1rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.admin-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.admin-panel th, .admin-panel td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.admin-panel th {
+  background: #003366;
+  color: white;
+}
+
+.admin-panel tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.action-buttons button {
+  margin-right: 0.5rem;
+}
+
+/* ===================
+   Forms
+=================== */
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  margin-top: 1rem;
+  width: auto;
+  display: inline-block;
+}
+/* Homepage Hero Section */
+.hero {
+  background: url('/moodle-clone/assets/media/koi-campus.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #ffcc00;
+  color: #003366;
+}
+
+.btn-primary:hover {
+  background: #e6b800;
+}
+
+.btn-secondary {
+  background: white;
+  color: #003366;
+}
+
+.btn-secondary:hover {
+  background: #f0f0f0;
+}
+
+/* About and Features */
+.about, .features {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about h3, .features h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+.dashboard-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-section {
+  margin-bottom: 2rem;
+}
+
+.dashboard-card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.dashboard-card h4 {
+  margin: 0 0 0.5rem;
+}
+
+
+.btn-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: #26507a;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-link:hover {
+  background-color: #003366;
+}
+
+.grade {
+  color: #333;
+  font-weight: bold;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.about-page ul,
+.course-list {
+  list-style: square inside;
+  margin-top: 1rem;
+}
+
+.course-list li {
+  margin-bottom: 1rem;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.register-page input,
+.register-page select {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+main.container h2, main.container h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+main.container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
